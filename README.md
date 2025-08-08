@@ -1,8 +1,19 @@
 
 # Ninja-Agent  
-**Angular | Flask | FasterWhisper | Google-ADK | Google-SDK | LLMs | SQLite**  
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Flask](https://img.shields.io/badge/Flask-latest-lightgrey)
+![Angular](https://img.shields.io/badge/Angular-16%2B-red)
+![FasterWhisper](https://img.shields.io/badge/FasterWhisper-optimized-success)
+![Google-ADK](https://img.shields.io/badge/Google--ADK-integrated-yellow)
+![Google-SDK](https://img.shields.io/badge/Google--SDK-enabled-brightgreen)
+![SQLite](https://img.shields.io/badge/SQLite-lightblue)
+![LLMs](https://img.shields.io/badge/LLMs-Gemini%2C%20GPT--4-orange)
+
+---
 
 An advanced AI-powered interview evaluation system that automates technical and behavioral interview assessments using **speech recognition** and **natural language understanding**, delivering real-time, unbiased scoring and feedback.
+
 
 ---
 
