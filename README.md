@@ -145,11 +145,7 @@ Ninja-Agent/
 
 ---
 
-## 📌 System Architecture Diagram
 
-![System Architecture](fc9c8a46-7478-4fd6-9a96-cbb21d2c5f59.png)
-
----
 
 ## 📈 Future Directions
 
