@@ -1,46 +1,47 @@
 
 # Ninja-Agent  
-**Angular Flask FasterWhisper Google-ADK Google-SDK LLMs SQLite**  
+**Angular | Flask | FasterWhisper | Google-ADK | Google-SDK | LLMs | SQLite**  
 
-An advanced AI-powered interview evaluation system that automates technical and behavioral interview assessments using **speech recognition** and **natural language understanding**, delivering real-time, unbiased scoring and feedback.  
-
----
-
-## 🚀 Key Features  
-- **Automated Interview Flow:** Presents predefined questions and records verbal responses.  
-- **High-Performance Transcription:** Uses **FasterWhisper** for accurate, low-latency speech-to-text conversion.  
-- **Semantic Evaluation:** Leverages **Google Gemini** and **OpenAI GPT-4** for intelligent scoring.  
-- **Structured Feedback:** Generates scores (0–10), improvement suggestions, and personalized analysis.  
-- **Modular Architecture:** Independent components for transcription, prompt generation, and scoring.  
-- **Real-Time Results:** Stores results in SQLite and displays them instantly on the frontend.  
+An advanced AI-powered interview evaluation system that automates technical and behavioral interview assessments using **speech recognition** and **natural language understanding**, delivering real-time, unbiased scoring and feedback.
 
 ---
 
-## 📋 Requirements  
-- Python 3.8+  
+## 🚀 Key Features
+- **Automated Interview Flow:** Presents predefined questions and records verbal responses.
+- **High-Performance Transcription:** Uses **FasterWhisper** for accurate, low-latency speech-to-text conversion.
+- **Semantic Evaluation:** Leverages **Google Gemini** and **OpenAI GPT-4** for intelligent scoring.
+- **Structured Feedback:** Generates scores (0–10), improvement suggestions, and personalized analysis.
+- **Modular Architecture:** Independent components for transcription, prompt generation, and scoring.
+- **Real-Time Results:** Stores results in SQLite and displays them instantly on the frontend.
+
+---
+
+## 📋 Requirements
+- Python 3.8+
 - Flask  
 - Angular  
 - FasterWhisper  
+- Sentence-BERT (SBERT)  
 - SQLite  
 - Google ADK & Google SDK  
 
 ---
 
-## 🔧 Installation  
+## 🔧 Installation
 
-**Clone the repository:**  
+**Clone the repository**
 ```bash
 git clone https://github.com/ishajangid/Ninja-Agent.git
 ````
 
-**Install backend dependencies:**
+**Install backend dependencies**
 
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
 
-**Install frontend dependencies:**
+**Install frontend dependencies**
 
 ```bash
 cd frontend
@@ -51,21 +52,21 @@ npm install
 
 ## 💻 Usage
 
-**Run the backend:**
+**Run the backend**
 
 ```bash
 cd backend
 python app.py
 ```
 
-**Run the frontend:**
+**Run the frontend**
 
 ```bash
 cd frontend
 ng serve
 ```
 
-**Interview Workflow:**
+**Interview Workflow**
 
 1. Candidate receives a question on the web interface.
 2. Responds verbally via microphone input.
@@ -106,30 +107,36 @@ Ninja-Agent/
 
 ## 🔬 Technical Overview
 
-**Speech Recognition:**
+**Speech Recognition**
 
-* **Model:** FasterWhisper (quantized for faster inference)
-* **Decoding:** Beam search for higher accuracy
-* **Deployment:** ONNX Runtime for CPU/GPU compatibility
+* Model: FasterWhisper (quantized for faster inference)
+* Decoding: Beam search for higher accuracy
+* Deployment: ONNX Runtime for CPU/GPU compatibility
 
-**Agentic AI Architecture:**
+**Agentic AI Architecture**
 
 * Session state tracking
 * Voice activity handling
 * Prompt engineering for LLM evaluation
 * Score parsing and feedback generation
 
-**Google ADK:**
+**Google ADK**
 
 * Multi-turn dialogue management
 * REST API communication between frontend & backend
 * Metadata routing and formatting
 
-**Google SDK:**
+**Google SDK**
 
 * Voice Activity Detection (VAD) for seamless interaction
 * Real-time audio recording and encoding
 * Event-driven triggers for automated scoring
+
+---
+
+## 📌 System Architecture Diagram
+
+![System Architecture](fc9c8a46-7478-4fd6-9a96-cbb21d2c5f59.png)
 
 ---
 
@@ -139,5 +146,4 @@ Ninja-Agent/
 * Multilingual input support
 * Recruiter analytics dashboard
 * Integration with LinkedIn/Naukri APIs
-
 
