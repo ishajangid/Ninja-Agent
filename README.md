@@ -1,3 +1,4 @@
+
 # Ninja-Agent  
 **Angular Flask FasterWhisper Google-ADK Google-SDK LLMs SQLite**  
 
@@ -20,7 +21,6 @@ An advanced AI-powered interview evaluation system that automates technical and 
 - Flask  
 - Angular  
 - FasterWhisper  
-- Sentence-BERT (SBERT)  
 - SQLite  
 - Google ADK & Google SDK  
 
@@ -31,51 +31,53 @@ An advanced AI-powered interview evaluation system that automates technical and 
 **Clone the repository:**  
 ```bash
 git clone https://github.com/ishajangid/Ninja-Agent.git
-Install backend dependencies:
+````
 
-bash
-Copy
-Edit
+**Install backend dependencies:**
+
+```bash
 cd backend
 pip install -r requirements.txt
-Install frontend dependencies:
+```
 
-bash
-Copy
-Edit
+**Install frontend dependencies:**
+
+```bash
 cd frontend
 npm install
-💻 Usage
-Run the backend:
+```
 
-bash
-Copy
-Edit
+---
+
+## 💻 Usage
+
+**Run the backend:**
+
+```bash
 cd backend
 python app.py
-Run the frontend:
+```
 
-bash
-Copy
-Edit
+**Run the frontend:**
+
+```bash
 cd frontend
 ng serve
-Interview Workflow:
+```
 
-Candidate receives a question on the web interface.
+**Interview Workflow:**
 
-Responds verbally via microphone input.
+1. Candidate receives a question on the web interface.
+2. Responds verbally via microphone input.
+3. FasterWhisper transcribes audio in real-time.
+4. LLM evaluates semantic similarity with reference answer.
+5. Score + feedback stored and displayed instantly.
 
-FasterWhisper transcribes audio in real-time.
+---
 
-LLM evaluates semantic similarity with reference answer.
+## 📊 Sample Output
 
-Score + feedback stored and displayed instantly.
-
-📊 Sample Output
-json
-Copy
-Edit
+```json
 {
   "candidate_name": "Isha Jangir",
   "question_id": "Q102",
@@ -86,57 +88,56 @@ Edit
     }
   ]
 }
-🏗 Project Structure
-bash
-Copy
-Edit
+```
+
+---
+
+## 🏗 Project Structure
+
+```
 Ninja-Agent/
 ├── backend/            # Flask backend + FasterWhisper integration
 ├── frontend/           # Angular UI for candidate interaction
 ├── database/           # SQLite DB schema and stored results
 └── README.md
-🔬 Technical Overview
-Speech Recognition:
+```
 
-Model: FasterWhisper (quantized for faster inference)
+---
 
-Decoding: Beam search for higher accuracy
+## 🔬 Technical Overview
 
-Deployment: ONNX Runtime for CPU/GPU compatibility
+**Speech Recognition:**
 
-Agentic AI Architecture:
+* **Model:** FasterWhisper (quantized for faster inference)
+* **Decoding:** Beam search for higher accuracy
+* **Deployment:** ONNX Runtime for CPU/GPU compatibility
 
-Session state tracking
+**Agentic AI Architecture:**
 
-Voice activity handling
+* Session state tracking
+* Voice activity handling
+* Prompt engineering for LLM evaluation
+* Score parsing and feedback generation
 
-Prompt engineering for LLM evaluation
+**Google ADK:**
 
-Score parsing and feedback generation
+* Multi-turn dialogue management
+* REST API communication between frontend & backend
+* Metadata routing and formatting
 
-Google ADK:
+**Google SDK:**
 
-Multi-turn dialogue management
+* Voice Activity Detection (VAD) for seamless interaction
+* Real-time audio recording and encoding
+* Event-driven triggers for automated scoring
 
-REST API communication between frontend & backend
+---
 
-Metadata routing and formatting
+## 📈 Future Directions
 
-Google SDK:
+* Facial emotion recognition
+* Multilingual input support
+* Recruiter analytics dashboard
+* Integration with LinkedIn/Naukri APIs
 
-Voice Activity Detection (VAD) for seamless interaction
 
-Real-time audio recording and encoding
-
-Event-driven triggers for automated scoring
-
-📌 System Architecture Diagram
-
-📈 Future Directions
-Facial emotion recognition
-
-Multilingual input support
-
-Recruiter analytics dashboard
-
-Integration with LinkedIn/Naukri APIs
