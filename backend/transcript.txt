@@ -1,0 +1,1 @@
+basically it takes a big of log n and like binary search elements half of the remaining elements in each iteration
